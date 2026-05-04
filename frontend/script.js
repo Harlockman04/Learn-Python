@@ -1,4 +1,4 @@
-const API_URL = 'https://learnpy.onrender.com'; // Cambia por tu URL de Render
+const API_URL = 'https://learnpy-ra0w.onrender.com'; // Cambia por tu URL de Render
 let userId = 'user_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
 let currentExercise = '';
 let currentLevel = 'basico';
