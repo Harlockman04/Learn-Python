@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Python Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🐍 Aprende Python</h1>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </header>
+
+        <main class="content-area">
+            <div id="chatMessages" class="chat-container">
+                <div class="message bot-message">
+                    ¡Hola! Soy tu tutor interactivo de Python. 🎉
+                    ¿Listo para empezar tu viaje de programación?
+                </div>
+            </div>
+
+            <div class="exercise-area" id="exerciseArea" style="display: none;">
+                <div class="exercise-header">
+                    <h3>📝 Ejercicio</h3>
+                    <button class="hint-btn" id="hintBtn">💡 Pista</button>
+                </div>
+                <div id="exerciseContent" class="exercise-content"></div>
+                <textarea id="codeInput" class="code-input" placeholder="Escribe tu código aquí..."></textarea>
+                <div class="button-group">
+                    <button class="submit-btn" id="submitBtn">✅ Verificar</button>
+                    <button class="next-btn" id="nextBtn" style="display: none;">➡️ Siguiente</button>
+                </div>
+            </div>
+
+            <div class="level-selector" id="levelSelector" style="display: none;">
+                <h3>¿Cuál es tu nivel?</h3>
+                <div class="level-buttons">
+                    <button class="level-btn" data-level="basico">🌱 Básico</button>
+                    <button class="level-btn" data-level="intermedio">⚡ Intermedio</button>
+                    <button class="level-btn" data-level="avanzado">🚀 Avanzado</button>
+                </div>
+            </div>
+        </main>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>El tutor está pensando...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
